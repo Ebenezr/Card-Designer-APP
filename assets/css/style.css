@@ -8,8 +8,9 @@
     font-family: 'Lato', sans-serif;
 }
 .container{
-    width: 360px;
-    height: 800px;
+    min-width: 360px;
+    height: 100vh;
+    max-height:1920px !important;
     background-color: #000;
     color: #fff;
     margin: 0 auto;
