@@ -160,7 +160,7 @@ nav{
     align-items:center;
     margin: 0 0.5em;
     font-weight: 100;
-    border-bottom: 0.2em solid rgb(0, 0, 0);
+    /* border-bottom: 0.2em solid rgb(0, 0, 0); */
 }
 .color{
     width:4em;
@@ -168,6 +168,38 @@ nav{
     border-radius:0.3em;
     background-color:rgb(69, 69, 69);
 }
+.blue{
+    background: blue !important;
+}
+.black{
+    background: rgb(46, 46, 46) !important;
+}
+.purple{
+    background: purple !important;
+}
+.grey{
+    background: gray !important;
+}
+.white{
+    background: white !important;
+}
+.teal{
+    background: rgb(12, 166, 227) !important;
+}
+/* .colorCard{
+    pointer-events: none;
+
+} */
+.color{
+    /* pointer-events: auto; */
+    cursor: pointer;
+}
+.colorCard:hover{
+    background-color:#000;
+    border-bottom: 0.2em solid purple !important;
+}
+
+
 .colorCard h4{
     
 }
@@ -221,6 +253,7 @@ form{
     border-radius:1em;
     background-color:rgb(46, 46, 46);
     color: rgb(255, 255, 255);
+    cursor: pointer;
 }
 .btn:hover{
    background-color:rgb(187, 187, 187) !important; 
@@ -235,6 +268,7 @@ form{
     outline: none;
     font-size: 1.8em;
     background-color:rgba(0, 0, 0, 0);
+    cursor: pointer;
     
 
 }
