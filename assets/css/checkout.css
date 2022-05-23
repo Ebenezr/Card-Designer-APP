@@ -19,6 +19,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
+    
 }
 header{
     height:10vh;

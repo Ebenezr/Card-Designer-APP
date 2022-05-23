@@ -21,7 +21,7 @@
     position: relative;
 }
 header{
-    height:27vh;
+    height:35vh;
     width: 100%;
     background-color: rgb(0, 0, 0);
     position: relative;
@@ -51,10 +51,10 @@ nav{
 /*card style begin*/
 .card{
     width: 90%;
-    height: 13rem;
+    height: 15rem;
     border-radius: 1rem;
     position: absolute;
-    bottom:-3.9em;
+    bottom:-4.5em;
     align-self: center;
     
 }
@@ -127,7 +127,10 @@ nav{
      color: #000;
     width:100%;
     height:15vh;
-    margin-top:5em;
+    margin-top:6em;
+}
+.themeColor h3{
+    margin-left: 0.5em;
 }
 .colorwrapper{
     width:90%;
@@ -135,11 +138,21 @@ nav{
     display:flex;
     flex-direction: row;
     overflow: hidden;
+    overflow-x: auto;
     
 }
+/*Add scroll bar in chrome*/
+.colorwrapper::-webkit-scrollbar{
+    display: none;
+}
+/*Add scroll bar in firefox*/
+.colorwrapper{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
 .colorCard{
-    width:4.5em;
-    height:4.5em;
+    width:5em;
+    height:5em;
     border-radius:0.2em;
     text-align:center;
     display:flex;
@@ -150,10 +163,10 @@ nav{
     border-bottom: 0.2em solid rgb(0, 0, 0);
 }
 .color{
-    width:3em;
-    height: 3em;
+    width:4em;
+    height: 4em;
     border-radius:0.3em;
-    background-color:rgb(0, 0, 0);
+    background-color:rgb(69, 69, 69);
 }
 .colorCard h4{
     
@@ -163,7 +176,11 @@ nav{
     
     width:100%;
     height:30vh;
-    margin-top:0.5em;
+    margin-top:0.7em;
+}
+.userInfo h3{
+    color:black;
+    margin-left: 0.5em;
 }
 form{
     width:90%;
@@ -175,18 +192,49 @@ form{
 .input{
     display: block;
     width: 100%;
-    padding:0.4em 0.3em 0.5em;
+    padding:0.8em 0.5em;
     border:none;
-    background-color:grey;
-    margin: 0.2em 0;
+    background-color:rgb(221, 221, 221);
+    margin: 0.4em 0;
+    outline: none;
 }
 .input::placeholder{
     color: grey;
 }
-input[type="submit"]{
-    padding:0.4em 0.9em;
-    margin: 0.5em;
-    align-self: center;
+.btn-wrapper{
+    color: rgb(46, 46, 46) !important;
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 2em;
+    position: absolute;
+    bottom:0;
+    position: relative;
+    align-items: center;
+    height:6vh;
+    /* background-color:antiquewhite; */
+}
+.btn-wrapper .btn-submit{
+    padding:0.6em 4.5em;
     border:none;
     border-radius:1em;
+    background-color:rgb(46, 46, 46);
+    color: rgb(255, 255, 255);
+}
+.btn:hover{
+   background-color:rgb(187, 187, 187) !important; 
+}
+
+
+#checkout-btn{
+    color:rgb(46, 46, 46) !important;
+    position:absolute;
+    right:0;
+    border:none;
+    outline: none;
+    font-size: 1.8em;
+    background-color:rgba(0, 0, 0, 0);
+    
+
 }
